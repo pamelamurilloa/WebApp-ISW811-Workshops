@@ -1,6 +1,6 @@
 # Workshop 02 - LAMP
 
-# Preambule
+## Preambule
 
 We make sure to have the server running with:
 
