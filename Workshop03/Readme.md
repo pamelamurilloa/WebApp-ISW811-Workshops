@@ -17,13 +17,13 @@ sudo apt-get update
 sudo apt-get install vim vim-nox curl apache2 mariadb-client php8.2 php8.2-curl php8.2-bcmath php8.2-mysql php8.2-mcrypt php8.2-xml php8.2-zip php8.2-mbstring
 php -v
 ```
-The last command is so we can confirm the correct instalation of php
+The last command is so we can confirm the correct instalation of php.
 
 ![browser image](./image01.png)
 
 ## Creating the database
 
-To create a database we must first create a folder for it, this will be done on the VMs folder, if we have the terminal on the previous step, then the command line should look something like this>
+To create a database we must first create a folder for it, this will be done on the VMs folder, if we have the terminal on the previous step, then the command line should look something like this:
 
 ```bash
 vagrant@bookworm:~$ exit
@@ -51,21 +51,21 @@ vagrant init debian/bookworm646
 code Vagrantfile
 ```
 
-On that file, on line 35, we must de-comment the line and change the ip to something more useful to us
+On that file, on line 35, we must de-comment the line and change the ip to something more useful to us.
 
 ![browser image](./image02.png)
 
 ### Changing the hostname
 
-With this, we can start vagrant and change the host name to avoid confusion
+With this, we can start vagrant and change the host name to avoid confusion.
 
 ```bash
 sudo hostnamectl set-hostname database
 vagrant@bookworm:~$ sudo nano /etc/hosts
 ```
 
-The second line is to access another file neccesary to change the hostname.
-On the second row, right column there is a text "hostname", that will be changed into wharever it is you want.
+The second line is to access another file necessary to change the hostname.
+On the second row, right column there is a text "hostname", that will be changed into whatrever it is you want.
 
 ![browser image](./image03.png)
 
@@ -73,7 +73,7 @@ The same is done for the webserver.
 
 ### Installing server dependencies
 
-In vagrant@database, we use the following command to install the neccesary packages
+In vagrant@database, we use the following command to install the necessary packages
 
 ```bash
 sudo apt-get update
@@ -170,6 +170,9 @@ cd \
 cd Windows\System32\drivers\etc
 nodepad hosts
 ```
+There, we'll add the following line
+
+'192.168.56.10 lfts.isw811.xyz'
 
 ## Configuring virtual host
 
