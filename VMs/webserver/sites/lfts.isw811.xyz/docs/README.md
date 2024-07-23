@@ -113,3 +113,51 @@ ___
 - [50 - Build the Log In Page](./9-Forms%20and%20Authentication/build-the-log-in-page.md)
 
 - [51 - Laravel Breeze Quick Peek](./9-Forms%20and%20Authentication/laravel-breeze-quick-peek.md)
+
+___
+
+## 10 - Comments
+
+- [52 - Write the Markup for a Post Comment](./10-Comments/write-the-markup-for-a-post-comment.md.md)
+
+- [53 - Table Consistency and Foreign Key Constraints](./10-Comments/table-consistency-and-foreign-key-constraints.md)
+
+- [54 - Make the Comments Section Dynamic](./10-Comments/make-the-comments-section-dynamic.md)
+
+- [55 - Design the Comment Form](./10-Comments/design-the-comment-form.md)
+
+- [56 - Activate the Comment Form](./10-Comments/activate-the-comment-form.md)
+
+- [57 - Some Light Chapter Clean Up](./10-Comments/some-light-chapter-clean-up.md)
+
+## 11 - Newsletters and APIs
+
+- [58 - Mailchimp API Tinkering](./11-NewsLetters%20and%20APIs/mailchimp-api-tinkering.md)
+
+- [59 - Make the Newsletter Form Work](./11-NewsLetters%20and%20APIs/make-the-newsletter-form-work.md)
+
+- [60 - Extract a Newsletter Service](./11-NewsLetters%20and%20APIs/extract-a-newsletter-service.md)
+
+- [61 - Toy Chests and Contracts](./11-NewsLetters%20and%20APIs/toy-chests-and-constracts.md)
+
+## 12 - Admin Section
+
+- [62 - Limit Access to Only Admins](./12-Admin%20Section/limit-access-to-only-admins.md)
+
+- [63 - Create the Publish Post Form](./12-Admin%20Section/create-the-publish-post-form.md)
+
+- [64 - Validate and Store Post Thumbnails](./12-Admin%20Section/validate-and-store-post-thumbnails.md)
+
+- [65 - Extract Form-Specific Blade Components](./12-Admin%20Section/extract-form-specific-blade-components.md)
+
+- [66 - Extend the Admin Layout](./12-Admin%20Section/extend-the-admin-layout.md)
+
+- [67 - Create  Form to Edit and Delete Posts](./12-Admin%20Section/create-a-form-to-edit-and-delete-posts.md)
+
+- [68 - Group and Store Validation Logic](./12-Admin%20Section/group-and-store-validation-login.md)
+
+- [69 - All About Authorization](./12-Admin%20Section/all-about-authorization.md)
+
+## 13 - Conclusion
+
+- [70 - Conclusion](./13-Conclusion/goodbye-and-next-steps.md)
