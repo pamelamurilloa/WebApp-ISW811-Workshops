@@ -212,6 +212,8 @@ To make a cronjob that does that when we want we go to `crontab -e` to see the f
 
 The date at which the backup is made can and should vary depending on the requirements that need to be met.
 
+![browser image](./image10.png)
+
 ___
 
 Created by Pamela Murillo
