@@ -214,6 +214,12 @@ The date at which the backup is made can and should vary depending on the requir
 
 ![browser image](./image10.png)
 
+## Configuring an alias
+
+To change an alias, we can go to the `.bashrc` file. We can do this by going to the root of our file system using ~. and then `cd .bashrc`, opening it with nano we can add an alias `alias ll='ls -l'` to make our work faster.
+
+![browser image](./image11.png)
+
 ___
 
 Created by Pamela Murillo
