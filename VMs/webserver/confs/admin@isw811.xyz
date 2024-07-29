@@ -1,0 +1,35 @@
+<VirtualHost *:443>
+  ServerAdmin webmaster@lospatitos.isw811.xyz
+  ServerName lospatitos.isw811.xyz
+
+  SSLEngine on
+  SSLCertificateFile /etc/apache2/ssl/lospatitos.isw811.xyz/fullchain1.pem
+  SSLCertificateKeyFile /etc/apache2/ssl/lospatitos.isw811.xyz/privkey1.pem
+  SSLCertificateChainFile /etc/apache2/ssl/lospatitos.isw811.xyz/chain1.pem
+
+  # Indexes + Directory Root.
+  DirectoryIndex index.php index.html
+  DocumentRoot /home/vagrant/sites/lospatitos.isw811.xyz
+
+  <Directory /home/vagrant/sites/lospatitos.isw811.xyz>
+      DirectoryIndex index.php index.html
+      AllowOverride All
+      Require all granted
+  </Directory>
+
+  ErrorLog ${APACHE_LOG_DIR}/lospatitos.isw811.xyz.error.log
+  LogLevel warn
+  CustomLog ${APACHE_LOG_DIR}/lospatitos.isw811.xyz.access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName lospatitos.isw811.xyz
+    DocumentRoot /home/vagrant/sites/lospatitos.isw811.xyz
+
+    # Redireccionar todo el tráfico HTTP a HTTPS
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Otras configuraciones específicas de tu sitio
+</VirtualHost>
