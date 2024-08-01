@@ -1,0 +1,18 @@
+services:
+  proxy:
+    image: nginx:1-alpine
+    container_name: web_proxy
+    hostname: web_proxy
+    volumes:
+      - ./nginx_configs/:/etc/nginx/conf.d/:ro
+      - ./ssl:/etc/ssl/certs/nginx/:ro
+      - ./default_site/:/usr/share/nginx/html/:ro
+    ports:
+      - "443:443"
+      - "80:80"
+    networks:
+      - net_isw811
+
+networks:
+  net_isw811:
+    external: true
